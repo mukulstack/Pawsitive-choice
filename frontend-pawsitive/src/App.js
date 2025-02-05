@@ -1,12 +1,19 @@
-//import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage'; 
+import LoginPage from './pages/LoginPage'; 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Pawsitive-Choice</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
