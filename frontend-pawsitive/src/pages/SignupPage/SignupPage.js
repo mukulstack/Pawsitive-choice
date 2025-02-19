@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './SignupPage.css';
+import Header from '../../components/Header/Header';
 
 const SignupPage = () => {
   return (
     <div className='signup-container'>
+      <Header />
       <div className='title'>Sign Up</div>
       <div  className='signup-form'>
         <form>
