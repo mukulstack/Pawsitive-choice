@@ -1,23 +1,31 @@
 .header {
-    display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center;         /* Vertically center content */
-    padding: 15px 30px;          /* Padding for space around */
-    background-color: #e5dada;      /* Dark background color for header */
-    color: rgb(161, 17, 17);                /* White text color */
-    width: 100%;                 /* Make header span the full width of the page */
-    position: fixed;             /* Fix the header at the top of the page */
-    top: 0;                      /* Stick to the top */
-    left: 0;                     /* Align to the left */
-    z-index: 1000;  
-    border: 1px solid rgb(110, 14, 14);             /* Ensure it's above other elements */
-  }
-  
-  /* Styling for the logo (website name) */
-  .header .logo h1 {
-    margin: 0;                   /* Remove default margin from <h1> */
-    font-size: 30px;              /* Set font size */
-    font-family: Arial, sans-serif; /* Set a font family */
-    font-weight: bold;            /* Make the text bold */
-  }
-  
+  display: flex;
+  justify-content: space-between;  /* This will push the logo to the left and the buttons to the right */
+  align-items: center;             /* Vertically center content */
+  padding: 15px 30px;              /* Padding for space around */
+  background-color: #e5dada;       /* Background color for header */
+  color: rgb(161, 17, 17);         /* Text color */
+  width: 100%;                     /* Full width of the page */
+  position: fixed;                 /* Fix the header at the top of the page */
+  top: 0;                          /* Stick to the top */
+  left: 0;                         /* Align to the left */
+  z-index: 1000;                   /* Ensure it's above other elements */
+  border: 1px solid rgb(110, 14, 14); /* Border for separation */
+}
+
+/* Styling for the logo (website name) */
+.header .logo h1 {
+  margin: 0;                       /* Remove default margin from <h1> */
+  font-size: 30px;                  /* Set font size */
+  font-family: Arial, sans-serif;   /* Set a font family */
+  font-weight: bold;                /* Make the text bold */
+}
+
+/* Buttons container */
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;        /* Align the buttons to the right */
+  gap: 10px;                        /* Add space between the buttons */
+  align-items: center;              /* Vertically center the buttons */
+  margin-right: 20px;               /* Adjust this value to move buttons slightly left */
+}
