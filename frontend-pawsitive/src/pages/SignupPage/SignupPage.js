@@ -1,9 +1,38 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import './SignupPage.css';
 
 const SignupPage = () => {
   return (
-    <div>
-      <h1>This is signup page</h1>
+    <div className='signup-container'>
+      <div className='title'>Sign Up</div>
+      <div  className='signup-form'>
+        <form>
+        <label htmlFor='name' >Name</label>
+          <input type='text' id='name'placeholder='Enter your full name'></input>
+
+          <label htmlFor='email' >Email</label>
+          <input type='email' id='email' placeholder='Enter your email' ></input>
+
+          <label htmlFor='number' >Mobile Number</label>
+          <input type='tel' id='number'placeholder='Enter your mobile number'></input>
+
+
+          <label htmlFor='address' >Address</label>
+          <input type='text' id='address' placeholder='Enter your address' ></input>
+        
+          <label htmlFor='password' label="label">Create Password</label>
+          <input type='password' id='password' placeholder='Enter a password'></input>
+
+          <br></br>
+          <input type='submit' value="Sign up"></input>
+          <br></br>
+        </form>
+
+        <p>Already Registered? <Link to="/login" className='link'>Log in</Link></p>
+
+      </div>
+
     </div>
   );
 };
