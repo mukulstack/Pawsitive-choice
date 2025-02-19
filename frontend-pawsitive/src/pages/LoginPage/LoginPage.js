@@ -14,7 +14,6 @@ const LoginPage = () => {
           <input type='email' id='email' placeholder='Enter your name'></input>
           <label htmlFor='password' label="label"></label>
           <input type='password' id='password' placeholder='Enter your password'></input>
-          <br></br>
           <input type='submit' value="Log in"></input>
         </form>
 
