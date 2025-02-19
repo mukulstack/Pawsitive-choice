@@ -8,6 +8,8 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import SignupPage from './pages/SignupPage/SignupPage';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ViewPet from './pages/ViewPet/ViewPet';
+import SearchPet from './pages/SearchPet/SearchPet';
+import SavedPets from './pages/SavedPets/SavedPets';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/viewpet" element={<ViewPet />} />
+        <Route path="/searchpet" element={<SearchPet />} />
+        <Route path="/savedpets" element={<SavedPets />} />
       </Routes>
     </Router>
   );
