@@ -1,0 +1,71 @@
+/* Main container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content area */
+.content-container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Filters container on the left */
+.filters-container {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters-container h3 {
+    margin-bottom: 15px;
+}
+
+.filters-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filters-container select,
+.filters-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+/* Results container */
+.results-container {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Pet card layout */
+.pet-card {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pet-card p {
+    margin: 10px 0;
+}
+
+/* Hover effect for pet cards */
+.pet-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

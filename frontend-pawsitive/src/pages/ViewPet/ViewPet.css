@@ -1,0 +1,51 @@
+/* Main container that holds everything */
+.main-container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Center content vertically */
+  height: 100vh;           /* Full viewport height */
+  background-color: #e5dada; /* Optional background color */
+  flex-direction: column;  /* Stack items vertically */
+}
+
+/* Container for pet details (images and information) */
+.view-pet-containter {
+  text-align: center;       /* Center text inside the container */
+  background-color: #ffe1e1;  /* White background */
+  padding: 30px;            /* Padding inside the container */
+  border-radius: 10px;      /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;   /* Stack items vertically */
+  gap: 20px;                /* Space between items */
+  min-height: 500px;        /* Minimum height for the container */
+  width: 80%;               /* Limit the width */
+  max-width: 1200px;        /* Maximum width */
+  margin: 0 auto;           /* Center container horizontally */
+}
+
+/* Styling for the images */
+.pet-images {
+  display: flex;
+  justify-content: center;  /* Center the images horizontally */
+  gap: 80px;                /* Space between images */
+}
+
+.pet-images img {
+  width: 200px;             /* Fixed width for the images */
+  height: auto;             /* Maintain aspect ratio */
+  border-radius: 5px;       /* Rounded corners for images */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Styling for pet information */
+.pet-information {
+  font-size: 18px;          /* Font size for information */
+  color: #333;              /* Text color */
+  line-height: 1.5;         /* Line height for readability */
+  padding: 10px 0;          /* Vertical padding for spacing */
+}
+
+p {
+  text-align: left;
+}
