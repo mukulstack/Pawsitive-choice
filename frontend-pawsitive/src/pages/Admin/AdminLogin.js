@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import './LoginPage.css';
+import './AdminLogin.css';
 import Header from '../../components/Header/Header';
 
-const LoginPage = () => {
+const AdminLogin = () => {
   return (
     <div className='container'>
       <Header />
-      <div className='title'>Log In</div>
+      <div className='title'>Admin Login</div>
       <div  className='login-form'>
         <form>
           <label htmlFor='email' ></label>
@@ -16,13 +15,10 @@ const LoginPage = () => {
           <input type='password' id='password' placeholder='Enter your password'></input>
           <input type='submit' value="Log in"></input>
         </form>
-
-        <p>Already a user? <Link to="/signup" className='link'>Sign up</Link></p>
-
       </div>
 
     </div>
   );
 };
 
-export default LoginPage;
+export default AdminLogin;

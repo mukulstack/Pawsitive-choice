@@ -10,6 +10,8 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import ViewPet from './pages/ViewPet/ViewPet';
 import SearchPet from './pages/SearchPet/SearchPet';
 import SavedPets from './pages/SavedPets/SavedPets';
+import Admin from './pages/Admin/AdminLogin';
+import AdoptionReq from './pages/AdoptionReq/AdoptionReq';
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         <Route path="/viewpet" element={<ViewPet />} />
         <Route path="/searchpet" element={<SearchPet />} />
         <Route path="/savedpets" element={<SavedPets />} />
+        <Route path="/admin" element={<Admin />} />        
+        <Route path="/adoptionreq" element={<AdoptionReq />} />        
+
       </Routes>
     </Router>
   );

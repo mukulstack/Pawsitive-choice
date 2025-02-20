@@ -58,9 +58,10 @@ input[type=submit]:hover {
 }
 
 p {
-  margin: 15px 0 20px;
+  margin: 5px auto 10px;
   font-weight: 500;
   font-size: 16px;
+  display: inline-flex;
 }
 
 .link {

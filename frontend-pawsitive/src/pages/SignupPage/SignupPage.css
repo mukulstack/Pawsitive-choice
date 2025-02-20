@@ -73,14 +73,16 @@ label {
 }
 
 p {
-  margin: 15px 0 10px;
+  margin: 5px auto 10px;
   font-weight: 500;
   font-size: 16px;
+  display: block;
+  /* margin-left: 100px; */
 }
 
 .link {
   font-weight: 500;
   color: rgb(39, 91, 246);
-  margin: auto;
+  margin-top: 5px;
   display: block;
 }
