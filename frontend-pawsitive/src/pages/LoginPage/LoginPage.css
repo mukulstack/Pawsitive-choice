@@ -9,7 +9,7 @@ body {
 .container {
   width: 350px;
   padding: 20px;
-  background: #fff;
+  background: #e5dada;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -20,7 +20,7 @@ body {
   font-weight: 600;
   line-height: 100px;
   color: #fff;
-  background-color: purple;
+  background-color:  rgb(161, 17, 17); ;
   border-radius: 15px 15px 0 0;
   margin-bottom: 30px;
 }
@@ -44,7 +44,7 @@ input[type=submit] {
   width: 94%;
   margin: 20px 0 25px;
   padding: 10px 15px;
-  background-color: rgb(139, 6, 154);
+  background-color: rgb(161, 17, 17); ;
   color: white;
   border-radius: 20px;
   border: 1px solid;
@@ -54,7 +54,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: rgb(107, 3, 119);
+  background-color:  rgb(136, 7, 7); ;
 }
 
 p {
@@ -62,10 +62,12 @@ p {
   font-weight: 500;
   font-size: 16px;
   display: inline-flex;
+  margin-bottom: 5px;
 }
 
 .link {
   font-weight: 500;
-  color: rgb(39, 91, 246);
+  /* color: rgb(39, 91, 246); */
   text-align: center;
+  margin-bottom: 10px;
 }

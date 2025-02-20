@@ -9,10 +9,10 @@ const AdminLogin = () => {
       <div className='title'>Admin Login</div>
       <div  className='login-form'>
         <form>
-          <label htmlFor='email' ></label>
-          <input type='email' id='email' placeholder='Enter your email'></input>
-          <label htmlFor='password' label="label"></label>
-          <input type='password' id='password' placeholder='Enter your password'></input>
+          <label htmlFor='username' >Username: </label>
+          <input type='text' id='username' placeholder='Enter Username'></input>
+          <label htmlFor='password' label="label">Password: </label>
+          <input type='password' id='password' placeholder='Enter  password'></input>
           <input type='submit' value="Log in"></input>
         </form>
       </div>

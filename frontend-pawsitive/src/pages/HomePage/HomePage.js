@@ -21,6 +21,9 @@ const HomePage = () => {
           <button onClick={handleSignUpClick}>Sign up</button>
         </div>
       </Header>
+      <div>
+        Homepage Content
+      </div>
     </div>
   );
 };
