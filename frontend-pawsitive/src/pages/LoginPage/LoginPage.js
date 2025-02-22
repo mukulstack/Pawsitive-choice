@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import './LoginPage.css';
+import Style from './LoginPage.module.css';
 import Header from '../../components/Header/Header';
 
 const LoginPage = () => {
   return (
-    <div className='container'>
+    <div className={Style.container}>
       <Header />
       <div className='title'>Log In</div>
       <div  className='login-form'>
@@ -17,7 +17,7 @@ const LoginPage = () => {
           <input type='submit' value="Log in"></input>
         </form>
 
-        <p>Already a user? <Link to="/signup" className='link'>Sign up</Link></p>
+        <p className={Style.p} >Already a user? <Link to="/signup" className={Style.link} >Sign up</Link></p>
 
       </div>
 
