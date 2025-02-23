@@ -12,6 +12,7 @@ import SearchPet from './pages/SearchPet/SearchPet';
 import SavedPets from './pages/SavedPets/SavedPets';
 import Admin from './pages/Admin/AdminLogin';
 import AdoptionReq from './pages/AdoptionReq/AdoptionReq';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/savedpets" element={<SavedPets />} />
         <Route path="/admin" element={<Admin />} />        
         <Route path="/adoptionreq" element={<AdoptionReq />} />        
-
+        <Route path='dashboard' element={<Dashboard />} />
       </Routes>
     </Router>
   );

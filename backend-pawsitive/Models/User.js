@@ -21,35 +21,23 @@ const UserSchema = new Schema({
     mobile: {
         type: String,
         required: true,
-        unique: true, 
-        validate: {
-            validator: function(v) {
-                // Simple validation for mobile number format 
-                return /^\+?\d{10,15}$/.test(v);
-            },
-            message: props => `${props.value} is not a valid mobile number!`
-        }
+        unique: true
     },
     address: {
         street: {
             type: String,
-            required: true
         },
         city: {
             type: String,
-            required: true
         },
         state: {
             type: String,
-            required: true
         },
         postalCode: {
             type: String,
-            required: true
         },
         country: {
             type: String,
-            required: true
         }
     }
 });
