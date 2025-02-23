@@ -18,10 +18,10 @@ const SignupPage = () => {
 
           <label htmlFor='number' >Mobile Number</label>
           <input type='tel' id='number'placeholder='Enter your mobile number'></input>
-
-
+          
+          {/* 
           <label htmlFor='address' >Address</label>
-          <input type='text' id='address' placeholder='Enter your address' ></input>
+          <input type='text' id='address' placeholder='Enter your address' ></input> */}
         
           <label htmlFor='password' label="label">Create Password</label>
           <input type='password' id='password' placeholder='Enter a password'></input>

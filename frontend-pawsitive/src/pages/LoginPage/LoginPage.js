@@ -11,7 +11,7 @@ const LoginPage = () => {
       <div  className={Style.loginForm}>
         <form>
           <label htmlFor='email'></label>
-          <input type='email' id='email' placeholder='Enter your email'></input>
+          <input type='email' id='email' placeholder='Enter your email...'></input>
 
           <label htmlFor='password'></label>
           <input type='password' id='password' placeholder='Enter your password'></input>
