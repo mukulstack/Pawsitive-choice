@@ -7,14 +7,16 @@ const LoginPage = () => {
   return (
     <div className={Style.container}>
       <Header />
-      <div className='title'>Log In</div>
-      <div  className='login-form'>
+      <div className={Style.title}>Log In</div>
+      <div  className={Style.loginForm}>
         <form>
-          <label htmlFor='email' ></label>
+          <label htmlFor='email'></label>
           <input type='email' id='email' placeholder='Enter your email'></input>
-          <label htmlFor='password' label="label"></label>
+
+          <label htmlFor='password'></label>
           <input type='password' id='password' placeholder='Enter your password'></input>
-          <input type='submit' value="Log in"></input>
+
+          <input type='submit' value="Log in" className={Style.loginSubmit}></input>
         </form>
 
         <p className={Style.p} >Already a user? <Link to="/signup" className={Style.link} >Sign up</Link></p>

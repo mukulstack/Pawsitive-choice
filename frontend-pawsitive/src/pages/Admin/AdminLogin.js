@@ -1,18 +1,20 @@
 import React from 'react';
-import './AdminLogin.css';
 import Header from '../../components/Header/Header';
+import Style from './AdminLogin.module.css';
 
 const AdminLogin = () => {
   return (
-    <div className='container'>
+    <div className={Style.container}>
       <Header />
-      <div className='title'>Admin Login</div>
-      <div  className='login-form'>
+      <div className={Style.title}>Admin Login</div>
+      <div  className={Style.form}>
         <form>
           <label htmlFor='username' >Username: </label>
           <input type='text' id='username' placeholder='Enter Username'></input>
-          <label htmlFor='password' label="label">Password: </label>
+
+          <label htmlFor='password'>Password: </label>
           <input type='password' id='password' placeholder='Enter  password'></input>
+
           <input type='submit' value="Log in"></input>
         </form>
       </div>

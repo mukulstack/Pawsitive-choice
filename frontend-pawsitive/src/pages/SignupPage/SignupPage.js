@@ -5,10 +5,10 @@ import Header from '../../components/Header/Header';
 
 const SignupPage = () => {
   return (
-    <div className={Style.signupContainer}>
+    <div className={Style.container}>
       <Header />
-      <div className='title'>Sign Up</div>
-      <div  className='signup-form'>
+      <div className={Style.title}>Sign Up</div>
+      <div  className={Style.signupForm}>
         <form>
         <label htmlFor='name' >Name</label>
           <input type='text' id='name'placeholder='Enter your full name'></input>
@@ -26,12 +26,10 @@ const SignupPage = () => {
           <label htmlFor='password' label="label">Create Password</label>
           <input type='password' id='password' placeholder='Enter a password'></input>
 
-          <br></br>
-          <input type='submit' value="Sign up"></input>
-          <br></br>
+          <input  type='submit' value="Sign up" className={Style.submit}></input>
         </form>
 
-        <p>Already Registered? <Link to="/login" className={Style.link}>Log in</Link></p>
+        <p className={Style.p}> Already Registered? <Link to="/login" className={Style.link}>Log in</Link></p>
 
       </div>
 

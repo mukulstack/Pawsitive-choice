@@ -27,7 +27,7 @@ body {
     margin-top: 20px;
   }
   
-  .signup-form {
+  .form {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -42,7 +42,7 @@ body {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+ .submit {
     width: 94%;
     margin: 20px 0 25px;
     padding: 10px 15px;
@@ -55,9 +55,23 @@ body {
     transition: 0.3s;
   }
   
-  input[type=submit]:hover {
+  .submit:hover {
     background-color:  rgb(124, 6, 6); ;
   }
+    
+    
+  .p {
+    margin: 5px auto 10px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+  }
   
-  
+  .link {
+      display: block;
+      font-weight: 500;
+      color: rgb(39, 91, 246);
+      text-align: center;
+      margin: 5px auto 10px;
+    }
   
