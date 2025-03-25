@@ -13,6 +13,7 @@ import SavedPets from './pages/SavedPets/SavedPets';
 import Admin from './pages/Admin/AdminLogin';
 import AdoptionReq from './pages/AdoptionReq/AdoptionReq';
 import Dashboard from './pages/Dashboard/Dashboard';
+import AddPet from './pages/AddPet/AddPet';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />        
         <Route path="/adoptionreq" element={<AdoptionReq />} />        
         <Route path='dashboard' element={<Dashboard />} />
+        <Route path="/addpet" element={<AddPet/>}/>
       </Routes>
     </Router>
   );

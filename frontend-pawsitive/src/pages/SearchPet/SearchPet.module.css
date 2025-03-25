@@ -1,0 +1,163 @@
+/* Main container for the entire page */
+.mainContainer {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-x: hidden;
+    position: sticky;
+    /* background-color: black; */
+}
+
+/* Content layout: Filters fixed on the left, pet cards on the right */
+.contentContainer {
+    display: flex;
+    width: 90%;
+    max-width: 1700px;
+    gap: 20px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-top: 120px;
+    padding: 20px;
+    position: sticky;
+
+}
+
+/* Filters Section (Fixed Position) */
+.mainContainer .filtersContainer {
+    width: 230px;
+    padding: 20px;
+    height: 600px;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+  background-color:  rgb(208, 137, 137); ;
+
+}
+
+/* Filter Labels */
+.filtersContainer label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #222020;
+
+}
+.filtersContainer h1 {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(13, 11, 11);
+}
+
+/* Dropdowns */
+.filtersContainer select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.filtersContainer select:focus{
+    border: 3px solid #8d081e; 
+    outline: none; 
+}
+/* Apply Filter Button */
+.filtersContainer button {
+    width: 200px;
+    background-color: rgb(129, 27, 27);
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.filtersContainer button:hover {
+    background-color: rgb(85, 22, 22);
+}
+
+/* Results Section (Scrollable pet cards) */
+.resultsContainer {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 90vh;
+    padding-right: 10px;
+    background: #e5dada;
+}
+
+/* Pet Card */
+.petCard {
+    background: rgb(247, 200, 200);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Pet Images */
+/* .petCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+} */
+.petCard img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Pet Name */
+.petCard h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Pet Details */
+.petCard p {
+    font-size: 16px;
+    color: #666;
+    margin: 7px 0;
+}
+.petCard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 60px 96px 0 rgba(0,0,0,0.2);
+}
+
+/* Responsive Design
+@media (max-width: 1024px) {
+    .resultsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+@media (max-width: 768px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+
+    .filtersContainer {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .resultsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

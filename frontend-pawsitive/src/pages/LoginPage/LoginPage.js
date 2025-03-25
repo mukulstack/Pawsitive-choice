@@ -108,7 +108,7 @@ const LoginPage = () => {
 
           <input type='submit' value="Log in" className={Style.loginSubmit}></input>
         </form>
-        <p className={Style.p}>Already a user? <Link to="/signup" className={Style.link}>Sign up</Link></p>
+        <p className={Style.p}> Not signed up yet? <Link to="/signup" className={Style.link}>Sign up</Link></p>
       </div>
       <ToastContainer />
     </div>

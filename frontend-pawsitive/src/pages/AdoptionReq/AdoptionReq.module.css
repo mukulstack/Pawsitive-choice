@@ -55,9 +55,9 @@ body {
     transition: 0.3s;
   }
   
-  input[type=submit]:hover {
+  /* input[type=submit]:hover {
     background-color: rgb(107, 3, 119);
-  }
+  } */
   
   input::placeholder {
     font-size: 13px;
